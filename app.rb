@@ -1,4 +1,3 @@
-require 'shotgun'
 require 'sinatra'
 
 get '/' do
@@ -18,5 +17,6 @@ get '/example' do
 end
 
 get '/cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
